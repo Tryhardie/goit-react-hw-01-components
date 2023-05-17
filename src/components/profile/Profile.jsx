@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   width: 500px;
   margin: 0 auto;
-  font-size: 24px;
   background-color: #e6edf5;
   outline: 1px solid #c1cfdf;
 `;
@@ -48,20 +47,20 @@ export default function Profile({ username, tag, location, avatar, stats }) {
       <UserInfo>
         <UserImage src={avatar} alt="User avatar" />
         <UserName>{username}</UserName>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </UserInfo>
       <UserStats>
         <UserStatItem>
-          <span className="label">Followers</span>
+          <span>Followers</span>
           <Quantity>{stats.followers}</Quantity>
         </UserStatItem>
         <UserStatItem>
-          <span className="label">Views</span>
+          <span>Views</span>
           <Quantity>{stats.views}</Quantity>
         </UserStatItem>
         <UserStatItem>
-          <span className="label">Likes</span>
+          <span>Likes</span>
           <Quantity>{stats.likes}</Quantity>
         </UserStatItem>
       </UserStats>

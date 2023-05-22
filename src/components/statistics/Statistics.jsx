@@ -15,6 +15,7 @@ const Title = styled.h2`
 `;
 
 const DataList = styled.ul`
+  margin: 0 0 15px;
   width: 500px;
   display: flex;
   justify-content: space-evenly;
